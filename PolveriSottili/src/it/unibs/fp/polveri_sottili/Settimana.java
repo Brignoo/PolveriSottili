@@ -4,22 +4,22 @@ public class Settimana {
 
 	private static final int DIM = 7;
 	
-	private int valori[];
+	private double valori[];
 	private int numeroSettimana;
 	private int anno;
 	
 	public Settimana(int anno, int numeroSettimana) {
 		
-		this.valori = new int[DIM];
+		this.valori = new double[DIM];
 		this.anno = anno;
 		this.numeroSettimana = numeroSettimana;
 	}
 
-	public int[] getValori() {
+	public double[] getValori() {
 		return valori;
 	}
 
-	public void setValori(int[] valori) {
+	public void setValori(double[] valori) {
 		this.valori = valori;
 	}
 
@@ -39,6 +39,21 @@ public class Settimana {
 		this.anno = anno;
 	}
 	
-	
+	public double getMassimo(){
+		double max=valori[0];
+		for (double d : valori) {
+			if(max<d)
+				max=d;
+		}
+		return max;
+	}
+
+	public double calcolaMedia(){
+		double media=0;
+		for (double d : valori) {
+			media+=d;
+		}
+		return media/DIM;
+	}
 	
 }
