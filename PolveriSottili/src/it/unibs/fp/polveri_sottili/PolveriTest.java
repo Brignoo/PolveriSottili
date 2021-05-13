@@ -4,6 +4,9 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ *Classe di test per controllare il funzionamento di PolveriSottili
+ */
 class PolveriTest {
 	
 	private static final int MEDIA = 50;

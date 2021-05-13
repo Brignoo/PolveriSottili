@@ -1,5 +1,8 @@
 package it.unibs.fp.polveri_sottili;
 
+/**
+ * Classe contenente l'array di valori, l'anno di riferimento e il numero della settimana presa in esame
+ */
 public class Settimana {
 
 	private static final int DIM = 7;
