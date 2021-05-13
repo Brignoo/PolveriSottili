@@ -5,7 +5,6 @@ import it.unibs.fp.mylib.MyMenu;
 
 public class PolveriMain {
 	
-	private final static int GIORNI_SETTIMANA = 7;
 	private final static int MAX_GIORNALIERO = 75;
 	private final static int MAX_MEDIA = 50;
 		
