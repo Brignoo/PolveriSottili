@@ -81,9 +81,7 @@ public class PolveriMain {
 				
 			}
 			
-			
 		}
 		while( scelta != 0 );
-		
 	}
 }
