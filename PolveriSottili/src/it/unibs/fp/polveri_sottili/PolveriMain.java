@@ -32,12 +32,25 @@ public class PolveriMain {
 	
 	private static void scriviSettimana(Settimana s) {
 		
+		double[] valori = s.getValori();
+		
+		for(int i = 0; i < s.getDIM(); i++ ) {
+			
+			valori[i] = MyInputDati.leggiDouble(GIORNO);
+		}
 		
 	}
 	
 	private static void visualizzaSettimana(Settimana s) {
 		
+		System.out.println( s );
 		
+		if( s.getMassimo() > MAX_GIORNALIERO ) {
+			System.out.println("ATTENZIONE: per almeno una giornata il valore supera il limite di " + MAX_GIORNALIERO);
+		}
+		if( s.calcolaMedia() > MAX_MEDIA ) {
+			System.out.println("ATTENZIONE: la media settimanale supera il limite di " + MAX_MEDIA);
+		}
 	}
 
 	public static void main(String[] args) {
