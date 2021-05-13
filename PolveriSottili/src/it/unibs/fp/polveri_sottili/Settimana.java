@@ -56,20 +56,13 @@ public class Settimana {
 		return media/DIM;
 	}
 	
-		public int getDIM(){
+	public int getDIM(){
 		return DIM;
 	}
 
-	public String toStringValori(){
-		String temp= "\nValori: ";
-		for (double d : valori) {
-			temp += d+", ";
-		}
-		return temp.substring(0, temp.length()-2)+".";
-	}
-
 	public String toString(){
-		return "Settimana: "+numeroSettimana+" anno: "+anno+"\nMassimo giornaliero: "+getMassimo()+"\nMedia settimanale: "+calcolaMedia()+toStringValori();
+		return "\nAnno: " + anno + "\t\t\tSettimana: " + numeroSettimana 
+		+ "\nMassimo giornaliero: " + String.format("%.2f", getMassimo()) + "\tMedia settimanale: " + String.format("%.2f", calcolaMedia()) + "\n";
 	}
 	
 }

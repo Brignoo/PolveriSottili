@@ -36,7 +36,7 @@ public class PolveriMain {
 		
 		for(int i = 0; i < s.getDIM(); i++ ) {
 			
-			valori[i] = MyInputDati.leggiDouble(GIORNO);
+			valori[i] = MyInputDati.leggiDouble(String.format(GIORNO, i+1));
 		}
 		
 	}
@@ -49,7 +49,7 @@ public class PolveriMain {
 			System.out.println("ATTENZIONE: per almeno una giornata il valore supera il limite di " + MAX_GIORNALIERO);
 		}
 		if( s.calcolaMedia() > MAX_MEDIA ) {
-			System.out.println("ATTENZIONE: la media settimanale supera il limite di " + MAX_MEDIA);
+			System.out.println("ATTENZIONE: la media settimanale supera il limite di " + MAX_MEDIA + "\n");
 		}
 	}
 
