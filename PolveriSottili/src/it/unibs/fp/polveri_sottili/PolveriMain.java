@@ -3,6 +3,10 @@ package it.unibs.fp.polveri_sottili;
 import it.unibs.fp.mylib.MyInputDati;
 import it.unibs.fp.mylib.MyMenu;
 
+/**
+ * Classe main del progetto polveri sottili, permette di determinare la qualità dell'aria calcolando il valore medio 
+ * e il valore massimo a partire da un array di valori inserito dall'utente.
+ */
 public class PolveriMain {
 	
 	private final static int MAX_GIORNALIERO = 75;
